@@ -1,0 +1,6 @@
+version: '2.0'
+services:
+  log_generator:
+    image: jmasseydd/workshop21:v0.2
+    environment:
+    - DD_API_KEY=${DD_API_KEY}
