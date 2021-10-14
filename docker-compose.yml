@@ -4,3 +4,10 @@ services:
     image: jmasseydd/workshop21:v0.2
     environment:
     - DD_API_KEY=${DD_API_KEY}
+    - FLAWS_DATASET=True
+    - ASSUME_ROLE_ATTACK=True
+    - CREATE_BUCKET=True
+    - PUBLIC_ANONYMOUS_S3=True
+    - AUTHENTICATED_S3_ACCESS=True
+    - S3_ACL=True
+    - ASSUME_ROLE=True
