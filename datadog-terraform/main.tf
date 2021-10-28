@@ -114,7 +114,7 @@ resource "datadog_security_monitoring_rule" "anonymous_get_object" {
 Detect when an object is downloaded from an S3 bucket without authentication.
 
 ### Strategy
-This rule lets you monitor S3 access logs for objects downloaded (`@evt.name:GetObject`) from your S3 bucke without authentication (`@userIdentity.accountId:ANONYMOUS_PRINCIPAL`).
+This rule lets you monitor S3 access logs for objects downloaded (`@evt.name:GetObject`) from your S3 bucket without authentication (`@userIdentity.accountId:ANONYMOUS_PRINCIPAL`).
 
 ### Triage and response
 1. Determine if the S3 bucket **{{@requestParameters.bucketName}}** and the objects downloaded should be publicly available.
